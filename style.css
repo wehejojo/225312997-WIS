@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: pink;
+    color: #F31515;
+}
+
+header, main, footer, dl, .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer{
+    width: 100vw;
+    background-color: #F87474;
+    color: white;
+}
+
+header{
+    height: 10vh;
+    font-size: larger;
+}
+
+main{
+    height: 83vh;
+    width: 100vw;
+    padding: 20px;
+    font-size: large;
+    overflow-y: auto;
+}
+
+main{
+    text-align: center;
+}
+
+main dl{
+    height: 90%;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.container{
+    height: 225px;
+    width: 225px;
+    background-color: #FDCFCF;
+    margin: 20px;
+    padding: 15px;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 7vh;
+}
