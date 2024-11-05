@@ -32,6 +32,7 @@
       box-sizing: border-box;
 
       font-family: 'Courier New', Courier, monospace;
+      color: white;
     }
     body{
       height: 100vh;
@@ -43,7 +44,6 @@
       align-items: center;
 
       background: darkslateblue;
-      color: white;
     }
     h1{
       text-align: center;
@@ -51,8 +51,8 @@
     form{
       margin: 30px;
     }
-    a{
-      color: white;
+    input{
+      color: black;
     }
     input[type=submit]{
       padding: 3px;

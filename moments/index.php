@@ -18,6 +18,7 @@
       box-sizing: border-box;
 
       font-family: 'Courier New', Courier, monospace;
+      color: white;
     }
     body{
       height: 100vh;
@@ -29,7 +30,6 @@
       align-items: center;
 
       background: darkslateblue;
-      color: white;
     }
     table{
       width: 50%;
@@ -49,6 +49,8 @@
     <tr>
       <th>Moment Title</th>
       <th>Moment Description</th>
+      <th>Remove</th>
+      <th>Update</th>
     </tr>
     <?php
       if($result->num_rows > 0){
@@ -56,13 +58,15 @@
           echo "<tr>";
           echo "<td>" . $row["title"] . "</td>";
           echo "<td>" . $row["body"] . "</td>";
-          echo '<td>Delete</td>';
-          echo "<tr>";
+          echo '<td><a href="delete.php?id=' . $row["entry_id"] . '">Delete the Moment</a></td>';
+          echo '<td><a href="edit.php?entry_id=' . $row["entry_id"] . '">Edit the Moment</a></td>';
+          echo "</tr>";
         }
       } else {
         echo "<tr><td colspan='2'>No Moments at the moment</td></tr>";
       }
     ?>
-  </table>
+  </table><br>
+  <a href="add.php">Add New Moment</a>
 </body>
 </html>
